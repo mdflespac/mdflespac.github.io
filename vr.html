@@ -5,5 +5,14 @@
 </head>
 <body>
   <div id="vrview"></div>
+  <script>
+    window.addEventListener('load', onVrViewLoad)
+      function onVrViewLoad() {
+        var vrView = new VRView.Player('#vrview', {
+          image: 'http://mdflespac.github.io/stade.jpg',
+          //is_stereo: true
+        });
+      }
+  </script>
 </body>
 </html>
