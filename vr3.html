@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>  
+</head>
+<body>
+  <div id="vrview"></div>
+  <script>
+    window.addEventListener('load', onVrViewLoad)
+      function onVrViewLoad() {
+        var vrView = new VRView.Player('#vrview', {
+          image: 'https://mdflespac.github.io/car.jpg',
+          //is_stereo: true
+        });
+      }
+  </script>
+</body>
+</html>
